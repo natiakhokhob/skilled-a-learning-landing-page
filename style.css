@@ -7,65 +7,71 @@ html{
     font-size: 10px;
 }
 body{
-    background-image: url(assets/logo-dark.svg);
-    background-position: top 22px left 16px ;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-   
-    background-size: 89px 35px, 327px 301px ;
     font-family: 'Plus Jakarta Sans';
     overflow-x: hidden;
     background-color: #F0F1FF;
+
+   
+    
+   
 }
-header>a{
+header{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+}
+.logo-dark{
+    margin-left: 16px;
+    margin-top: 10px;
+}
+.button1{
+    margin-right: 16px;
+    cursor: pointer;
+    background-color: #13183F;
     width: 140px;
     height: 48px;
     border-radius: 28px;
-    background-color:  #13183F;
+    border-style: none;
     color: white;
-    display: flex;
-   
-    align-items: center;
-    position: absolute;
-    top: 16px;
-    left: 219px;
-    text-decoration: none;
-    font-family: Plus Jakarta Sans;
+    font-family: 'Plus Jakarta Sans';
 font-size: 16px;
 font-weight: 700;
 line-height: 28px;
 letter-spacing: 0px;
+margin-top: 10px;
+}
+
+.heading-L>h1{
+   
+font-family: 'Plus Jakarta Sans';
+font-size: 40px;
+font-weight: 800;
+line-height: 50px;
+letter-spacing: 0px;
 text-align: left;
+color: #13183F;
 
 }
-header>a:hover{
-    background-color: #666CA3;
-}
-.heading-L>h1{
-    font-family: 'Plus Jakarta Sans';
-    font-size: 4rem;
-    weight: 800;
-    line-height: 5.04rem;
-    color: #13183F;
-}
 .heading-L{
-    position: absolute;
+    display: flex;
+ 
 width: 343px;
 height: 101px;
-left: 16px;
-top: 102px;
+margin: 45px 16px 0px 16px;
+
 }
 .Main-Paragraph{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin:  22.9rem 0rem 0rem 1.6rem;
+    margin: 26px 16px 0px 16px;
+    
    
 }
 .Main-Paragraph>p{
     font-family: 'Plus Jakarta Sans';
-font-style: normal;
+font-style: Medium;
 font-weight: 500;
 font-size: 16px;
 line-height: 26px;
@@ -100,6 +106,13 @@ text-align: left;
    opacity: 50%;
 
 }
+.hero-mobile{
+    width:327px;
+    height: 301px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 
 .grid-container{
     display: grid;
@@ -202,8 +215,10 @@ footer{
 }
 .logo-light{
     margin-left: 16px;
+    margin-top:10px;
 }
-button{
+
+.button2{
     margin-right: 16px;
     cursor: pointer;
     background-image: linear-gradient(#4851FF,#F02AA6);
@@ -217,37 +232,17 @@ font-size: 16px;
 font-weight: 700;
 line-height: 28px;
 letter-spacing: 0px;
+margin-top: 10px;
 
 
 }
 
-/*
-.logo-light{
-   padding: 43px 0px 42px 16px;
-}
-.last-button{
-    width: 140px;
-    height: 48px;
-    border-radius: 28px;
-    background-image: linear-gradient(#4851FF,#F02AA6);
-    margin: -80px 16px 36px 219px;
-    
-}
 
-.last-button>a{
-   
-    font-family: 'Plus Jakarta Sans';
-font-size: 16px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: 0px;
-text-align: left;
-color: white;
-
-margin: 45px 0px 0px 0px;
-}
-.last-button:hover{
+button:hover{
     opacity:50%;
-}*/
-
-
+}
+@media screen and (max-width: 750px){
+.hero-tablet{
+    display: none;
+}
+}

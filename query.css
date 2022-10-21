@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media  screen and (min-width: 750px) {
+    body{
+        background-image: url(assets/image-hero-tablet.png);
+        
+        background-repeat: no-repeat;
+        background-position: top -90px left 370px ;
+        background-size: 640.71px 640px;
+       
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: max-content 770px;
+        grid-column-gap: 10px;
+        grid-row-gap: 56px ;
+        margin-top: 210px;
+    }
+    .main-box{
+        width: 339px;
+        height: 259px;
+    }
+    footer{
+        width: 768px;
+        
+    }
+    .button2{
+        margin-right: 39px;
+    }
+
+    .hero-mobile{
+        display: none;
+    }
+    .Main-Paragraph{
+        width: 398px;
+        height: 78px;
+    }
+}
+
+@media  screen and (min-width: 900px) {
+    body{
+        background-image: url(assets/image-hero-desktop.png);
+        background-size: 991px 936px;
+        background-position: top -146px left 650px;
+        
+    }
+    
+    .grid-container {
+
+       display: flex;
+       flex-wrap: wrap;
+       margin-left: 165px;
+       margin-top: 350px;
+       column-gap: 30px;
+       row-gap: 80px;
+    }
+    .content-box1,
+    .content-box2,
+    .content-box3,
+    .content-box4,
+    .content-box5,
+    .main-box{
+        width: 350px;
+        height: 322px;
+    }
+    footer{
+        width: 1440px;
+        
+    }
+    .button2{
+        margin-right: 165px;
+
+    }
+    .logo-light{
+        margin-left: 165px;
+    }
+    .logo-dark{
+        margin-left: 165px;
+    }
+    .button1{
+        margin-right: 165px;
+
+    }
+    .Get-Started2{
+        margin-left: 165px ;
+    }
+    .tablet-desktop{
+        margin-left: 150px;
+        margin-top: 185px;
+        
+    }
+    h2{
+        font-size: 32px;
+        line-height: 40px;;
+    }
+}
